@@ -1,0 +1,18 @@
+{
+  "name": "noms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "zip -r function.zip . && aws lambda update-function-code --function-name dengy --zip-file fileb://function.zip"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-xray-sdk": "^2.5.0",
+    "axios": "^0.19.2",
+    "qs": "^6.9.1",
+    "querystring": "^0.2.0"
+  }
+}
